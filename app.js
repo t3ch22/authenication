@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(session({
-  secret: "secrets are kind of stupid.",
+  secret: ".envfile",
   resave: false,
   saveUninitialized: false
 }));
